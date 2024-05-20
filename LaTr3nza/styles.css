@@ -1,5 +1,9 @@
-body {
-    font-family: Arial, sans-serif;
+ body {
+    /* font-family: Arial, sans-serif; */
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 22px;
     margin: 0;
     padding: 0;
     background-color: #FAF3E0; 
