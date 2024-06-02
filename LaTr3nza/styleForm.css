@@ -1,108 +1,24 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Freeman", sans-serif;
-}
-
-body{
-    background-color: rgba(130, 116, 70, 0.98);
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(9, 1fr);
-    grid-template-areas: "banner banner banner banner"
-                         "header header header header" 
-                         " form form form form";
-       
-    height: 100vh;
-}
-
-header, .banner {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #D97D54; 
-    color: white;
-    font-size: 20px;
-}
-
-.banner{
-    grid-area: banner;
-}
-
-header{
-    position: sticky;
-    top: 0;
-    grid-area: header;
-    z-index: 3;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #6A4E3D; 
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    text-decoration: none; 
-}
-
-nav img {
-    vertical-align: middle;
-}
-
-nav a {
-    color: #FAF3E0; 
-    text-decoration: none;
-    padding: 10px 15px;
-}
-
-nav a:hover {
-    background-color: #D97D54; 
-    border-radius: 5px;
-}
-
-.logo{
-    width: 90px;
-    margin: 0;
-    
-}
-
-.logo img{
-    width: 100%;
-    border-radius: 180%;
-}
-
 .formulario{
-    grid-area: form;
-    width: 100vw;
-    display: grid;
-    grid-template: repeat(8, 1fr)/repeat(12,1fr);
+    display: flex;
     position: relative;
-
-
 }
 
 .form{
-   
-    grid-column: 4/10;
-    grid-row: 1/8;
     background-color: #e5e5f7;
-    opacity: 0.9;
+    opacity: 0.95;
     background-image:  linear-gradient(#9d6a1d 1px, transparent 0.75px), linear-gradient(to right, #db9f46 1px, #f7f7fa 1px);
     background-size: 20px 20px;
     margin: auto;
     width: 90%;
-    max-width: 500px;
+    max-width: 600px;
     padding: 3em 3em;
     border-radius: 10px;
+    text-align: center;
     z-index: 1;
    
 }
 .form_tittle{
  font-size: 2.3rem;
- display: flex;
- justify-content: center;
  height: 40%;
  color: rgb(125, 78, 7);
  margin-bottom: 60px;
@@ -208,26 +124,11 @@ fieldset{
 .imagen{
     display: flex;
     justify-content: end;
-    /* width: 35vw;
-    height: 40vh; */
-    grid-column: 9/13;
-    grid-row: 2/6;
+    width: 20vw;
+    height: 40vh;
     z-index: 2;
+    position: absolute;
+    top:10%;
+    right: 1%;
+    box-sizing: border-box;
 }
-.imagen-form{
-    height: 45vh;
-    object-fit: cover;
-   
-    
-    /* position: relative; */
-    
-    
-    
-}
-
-
- @media (max-width:425px){
-    .form_tittle{
-        font-size: 1.8rem;
-    }
- }

@@ -63,18 +63,18 @@
         <h2 class="form_tittle">CONTACTANOS</h2>
         <div class="form_container">
             <div class="form_group">
-                <input type="text" id="name" class="form_input" required placeholder=" ">
+                <input type="text" id="name" class="form_input" placeholder=" ">
                 <label for="name" class="form_label">Nombre:</label>
                 <span class="form_line"></span>
             </div>
 
             <div class="form_group">
-                <input type="email" name="correo" id="correo" class="form_input" required placeholder="email@dominio.com">
+                <input type="email" name="correo" id="correo" class="form_input" placeholder="email@dominio.com">
                 <label for="correo" class="form_label">Correo Electrónico</label>
                 <span class="form_line"></span>    
             </div>
             <div class="form_group">
-                <input type="text" name="telefono" id="telefono" class="form_input" required placeholder="código de área sin 0 y celular sin 15">
+                <input type="text" name="telefono" id="telefono" class="form_input" placeholder="código de área sin 0 y celular sin 15">
                 <label for="telefono" class="form_label">Teléfono</label>
                 <span class="form_line"></span>
             </div>
@@ -83,7 +83,7 @@
                 <textarea name="mensaje" id="mensaje" cols="50" rows="10" class="input-mensaje" placeholder="Escribe aquí tu consulta..." ></textarea> 
             
             <fieldset>
-                <legend class="form_group , form_input">Cómo le gustaría que lo contactemos?</legend>
+                <legend class="form_group , form_input">¿Cómo le gustaría que lo contactemos?</legend>
                <label for="radio-email" class="radio"><input type="radio" value="email" name="opcion-de-contacto" id="radio-email">Email</label>
                 
                 <label for="radio-telefono" class="radio"> <input type="radio" value="telefono" name="opcion-de-contacto" id="radio-telefono">Teléfono</label>
@@ -93,7 +93,7 @@
             </fieldset> 
 
             <fieldset>
-                <legend class="form_input">En qué horario prefiere que nos contactemos?</legend>
+                <legend class="form_input">¿En qué horario prefiere que nos contactemos?</legend>
                 <select class="opcion" name="opcion_horario" id="opcion">
                      <option value="mañana" >Mañana</option>
                      <option value="tarde" >Tarde</option>
@@ -101,7 +101,7 @@
                 </select>
             </fieldset>
            
-            <label for="check-novedades" class="check_novedades"><input type="checkbox" name="novedades" id="check-novedades" class="checkbox">Le gustaría recibir novedades y promos de LaTrenza?</label>
+            <label for="check-novedades" class="check_novedades"><input type="checkbox" name="novedades" id="check-novedades" class="checkbox">¿Le gustaría recibir novedades y promos de LaTr3nza?</label>
             <br>
             <p id="error"> </p>
             <input type="submit" class="form_submit" value="Enviar" onclick="validarEnviar()">
@@ -113,7 +113,7 @@
     
     </div>
   
-    
+    <script src="./validacion.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>

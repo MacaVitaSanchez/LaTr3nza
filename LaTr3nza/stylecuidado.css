@@ -1,5 +1,5 @@
 .container {
-    margin-top: 10px; /* Ajusta esto si el nav tiene diferente altura */
+    margin-top: 10px; 
     padding: 20px;
 }
 
@@ -40,3 +40,5 @@
         margin-bottom: 20px;
     }
 }
+
+
