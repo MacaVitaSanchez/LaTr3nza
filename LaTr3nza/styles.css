@@ -8,11 +8,15 @@
     background-color: #FAF3E0; 
 }
 
-header {
+header, .banner{
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
     background-color: #D97D54; 
     color: white;
+}
+header{
+    position: sticky;
+    top: 0;
 }
 
 nav {
@@ -36,6 +40,12 @@ nav a {
 nav a:hover {
     background-color: #D97D54; 
     border-radius: 5px;
+}
+.logo {
+    border-radius: 180%;
+    background-color: #FAF3E0;
+    width:70px;
+     height:70px;
 }
 
 section {

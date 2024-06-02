@@ -4,70 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Tr3nza</title>
-    <link rel="icon" href="imagenes/la Tr3nza Favicon.jpg">
+    <link rel="icon" href="imagenes/laTr3nzaFavicon.jpg">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <div class="banner">
         <h1>LA TR3NZA</h1>
         <hr>
         <h3>Peluquería</h3>
+    </div>
+    <header>
+        <nav>
+            <img src="imagenes/logo.jpg" alt="Logo" width="50" height="50">
+            <a href="">Trenzas</a>
+            <a href="">Cuidados del trenzado</a>
+            <a href="">Contacto</a>
+            <a href=""><img src="./imagenes/ubicacion2.png" alt="Ubicacion" class="logo-ubicacion" width="40" height="40"></a>
+        </nav>
     </header>
-    <nav>
-        <img src="imagenes/logo.jpg" alt="Logo" width="50" height="50">
-        <a href="">Trenzas</a>
-        <a href="">Cuidados del trenzado</a>
-        <a href="">Productos</a>
-        <a href="">Turnos</a>
-        <a href=""><img src="imagenes/usuario.png" alt="usuario" width="15" height="15"></a>
-        <a href=""><img src="imagenes/Lupa.png" alt="Lupa" width="15" height="15"></a>
-        <a href=""><img src="imagenes/Carrito.png" alt="Carrito" width="15" height="15"></a>
-    </nav>
-    <section>
-        <h2>Trenzas y peinados</h2>
-        <div class="gallery">
-            <div>
-                <h3>Boxbraids</h3>
-                <img src="imagenes/boxbraids.jpg" alt="Boxbraids" width="200" height="200">
-                <a href="">Ver más</a>
-            </div>
-            <div>
-                <h3>Cornrows</h3>
-                <img src="imagenes/cornrows.jpg" alt="Cornrows" width="200" height="200">
-                <a href="">Ver más</a>
-            </div>
-            <div>
-                <h3>Dreadlocks</h3>
-                <img src="imagenes/dreadlocks.jpg" alt="Dreadlocks" width="200" height="200">
-                <a href="">Ver más</a>
-            </div>
-            <div>
-                <h3>Fauxlocs</h3>
-                <img src="imagenes/fauxlocs.jpg" alt="fauxlocs" width="200" height="200">
-                <a href="">Ver más</a>
-            </div>
-            <div>
-                <h3>Crochet</h3>
-                <img src="imagenes/crochet.jpg" alt="Crochet" width="200" height="200">
-                <a href="">Ver más</a>
+    <main>
+        <section>
+            <h2>Trenzas y peinados</h2>
+            <div class="gallery">
+                <div>
+                    <h3>Boxbraids</h3>
+                    <img src="imagenes/boxbraids.jpg" alt="Boxbraids" width="200" height="200">
+                    <a href="">Ver más</a>
+                </div>
+                <div>
+                    <h3>Cornrows</h3>
+                    <img src="imagenes/cornrows.jpg" alt="Cornrows" width="200" height="200">
+                    <a href="">Ver más</a>
+                </div>
+                <div>
+                    <h3>Dreadlocks</h3>
+                    <img src="imagenes/dreadlocks.jpg" alt="Dreadlocks" width="200" height="200">
+                    <a href="">Ver más</a>
+                </div>
+                <div>
+                    <h3>Fauxlocs</h3>
+                    <img src="imagenes/fauxlocs.jpg" alt="fauxlocs" width="200" height="200">
+                    <a href="">Ver más</a>
+                </div>
+                <div>
+                    <h3>Crochet</h3>
+                    <img src="imagenes/crochet.jpg" alt="Crochet" width="200" height="200">
+                    <a href="">Ver más</a>
+                </div> 
             </div> 
-        </div>  
-    </section>
-    <section>
-        <div>
-            <h3>Nutrición e Hidratación</h3>
-            <img src="imagenes/nutricion.jpg" alt="Nutricion" width="200" height="200">
-            <img src="imagenes/hidratacion.jpg" alt="Hidratacion" width="200" height="200">
-        </div>
-    </section>
+        </section>
+        <section>
+            <!-- <div>
+                <h3>Nutrición e Hidratación</h3>
+                <img src="imagenes/nutricion.jpg" alt="Nutricion" width="200" height="200">
+                <img src="imagenes/hidratacion.jpg" alt="Hidratacion" width="200" height="200">
+            </div> -->
+        </section>
+    </main>
     <footer>
         <h2>Contáctanos</h2>
-        <a href="#">Mail</a>
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
+        <a href="#"><img src="./imagenes/correo-electronico.png" alt="e-mail" id="mail" width="50" height="50"></a>
+        <a href="#"><img src="./imagenes/facebook.svg" alt="Facebook" id="facebook" width="50" height="50"></a>
+        <a href="https://www.instagram.com/latr3nza_"><img src="./imagenes/instagram.svg" alt="Instagram" id="instagram" width="50" height="50" ></a>
+            
         <h4>Suscríbete para recibir nuestras ofertas</h4>
         <input type="text" placeholder="Ingrese su correo electrónico">
     </footer>
