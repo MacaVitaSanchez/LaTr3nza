@@ -19,18 +19,18 @@ header, .banner{
 header{
     position: sticky;
     top: 0;
-    z-index: 1000; /* Asegurar que el header tenga un z-index alto */
+    z-index: 1000; 
 }
 
 nav {
-    position: sticky; /* Hacer que el nav se mantenga fijo en la parte superior */
+    position: sticky; 
     top: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #6A4E3D; 
     padding: 10px 0;
-    z-index: 1001; /* Más alto que otros elementos */
+    z-index: 1001;
 }
 
 nav img {
@@ -51,6 +51,49 @@ nav a:hover {
     z-index: 1000;
 
 }
+
+.navbar {
+    background-color: #6A4E3D; 
+}
+
+.nav-link {
+    color: #000000; 
+}
+
+.nav-link:hover {
+    color: #ff6347; 
+}
+
+.navbar-toggler {
+    border-color: #000000; 
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); 
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand .logo {
+    margin-right: 10px;
+}
+
+.logo-ubicacion {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav .nav-link {
+        color: #000000; 
+    }
+}
+
+
+
 .logo {
     border-radius: 180%;
     background-color: #FAF3E0;
@@ -160,3 +203,4 @@ footer input[type="text"] {
     right: 5px;
     bottom: 110px;
 }
+
