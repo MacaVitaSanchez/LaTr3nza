@@ -6,11 +6,12 @@
     <title>La Tr3nza</title>
     <link rel="icon" href="imagenes/laTr3nzaFavicon.jpg">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <div class="banner">
@@ -50,143 +51,150 @@
     
     <section>
         <h2>Trenzas y peinados</h2>
-        <div class="gallery">
-            <div class="carousel-container">
-                <h3>Boxbraids</h3>
-                <img src="imagenes/boxbraids.jpg" alt="Boxbraids" width="200" height="200" class="carousel-img">
-                <div id="carouselBoxbraids" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="imagenes/boxbraids2.jpg" class="d-block w-100" alt="Boxbraids1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="carousel-container">
+                        <h3>Boxbraids</h3>
+                        <div id="carouselBoxbraids" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="imagenes/boxbraids.jpg" class="d-block w-100" alt="Boxbraids1">
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="imagenes/boxbraids2.jpg" class="d-block w-100" alt="Boxbraids1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imagenes/boxbraids1.jpg" class="d-block w-100" alt="Boxbraids2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imagenes/boxbraids3.jpg" class="d-block w-100" alt="Boxbraids3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBoxbraids" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselBoxbraids" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <div class="carousel-item">
-                            <img src="imagenes/boxbraids1.jpg" class="d-block w-100" alt="Boxbraids2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="imagenes/boxbraids3.jpg" class="d-block w-100" alt="Boxbraids3">
-                        </div>
+                        <a href="#">Ver más</a>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselBoxbraids" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselBoxbraids" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
-                <a href="">Ver más</a>
-            </div>
-
-            <div class="carousel-container">
-                <h3>Cornrows</h3>
-                <img src="imagenes/cornrows.jpg" alt="Cornrows" width="200" height="200" class="carousel-img">
-                <div id="carouselCornrows" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="imagenes/cornrows1.jpg" class="d-block w-100" alt="Cornrows1">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="carousel-container">
+                        <h3>Cornrows</h3>
+                        <div id="carouselCornrows" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="imagenes/cornrows1.jpg" class="d-block w-100" alt="Cornrows1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imagenes/cornrows2.jpg" class="d-block w-100" alt="Cornrows2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imagenes/cornrows3.jpg" class="d-block w-100" alt="Cornrows3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCornrows" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCornrows" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <div class="carousel-item">
-                            <img src="imagenes/cornrows2.jpg" class="d-block w-100" alt="Cornrows2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="imagenes/cornrows3.jpg" class="d-block w-100" alt="Cornrows3">
-                        </div>
+                        <a href="#">Ver más</a>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCornrows" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCornrows" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
-                <a href="">Ver más</a>
-            </div>
-
-            <div class="carousel-container">
-                <h3>Dreadlocks</h3>
-                <img src="imagenes/dreadlocks.jpg" alt="Dreadlocks" width="200" height="200" class="carousel-img">
-                <div id="carouselDreadlocks" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="imagenes/dreadlocks1.jpg" class="d-block w-100" alt="Dreadlocks1">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="carousel-container">
+                        <h3>Dreadlocks</h3>
+                        <div id="carouselDreadlocks" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="imagenes/dreadlocks1.jpg" class="d-block w-100" alt="Dreadlocks1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imagenes/dreadlocks2.jpg" class="d-block w-100" alt="Dreadlocks2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imagenes/dreadlocks3.jpg" class="d-block w-100" alt="Dreadlocks3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDreadlocks" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselDreadlocks" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <div class="carousel-item">
-                            <img src="imagenes/dreadlocks2.jpg" class="d-block w-100" alt="Dreadlocks2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="imagenes/dreadlocks3.jpg" class="d-block w-100" alt="Dreadlocks3">
-                        </div>
+                        <a href="#">Ver más</a>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDreadlocks" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselDreadlocks" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
-                <a href="">Ver más</a>
-            </div>
-
-            <div class="carousel-container">
-                <h3>Fauxlocs</h3>
-                <img src="imagenes/fauxlocs.jpg" alt="Fauxlocs" width="200" height="200" class="carousel-img">
-                <div id="carouselFauxlocs" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="imagenes/fauxlocs1.jpg" class="d-block w-100" alt="Fauxlocs1">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="carousel-container">
+                        <h3>Fauxlocs</h3>
+                        <div id="carouselFauxlocs" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="imagenes/fauxlocs1.jpg" class="d-block w-100" alt="Fauxlocs1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imagenes/fauxlocs2.jpg" class="d-block w-100" alt="Fauxlocs2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imagenes/fauxlocs3.jpg" class="d-block w-100" alt="Fauxlocs3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFauxlocs" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselFauxlocs" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <div class="carousel-item">
-                            <img src="imagenes/fauxlocs2.jpg" class="d-block w-100" alt="Fauxlocs2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="imagenes/fauxlocs3.jpg" class="d-block w-100" alt="Fauxlocs3">
-                        </div>
+                        <a href="#">Ver más</a>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselFauxlocs" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselFauxlocs" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
-                <a href="">Ver más</a>
-            </div>
-
-            <div class="carousel-container">
-                <h3>Crochet</h3>
-                <img src="imagenes/crochet.jpg" alt="Crochet" width="200" height="200" class="carousel-img">
-                <div id="carouselCrochet" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="imagenes/crochet1.jpg" class="d-block w-100" alt="Crochet1">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="carousel-container">
+                        <h3>Crochet</h3>
+                        <div id="carouselCrochet" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="imagenes/crochet1.jpg" class="d-block w-100" alt="Crochet1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imagenes/crochet2.jpg" class="d-block w-100" alt="Crochet2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imagenes/crochet3.jpg" class="d-block w-100" alt="Crochet3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCrochet" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCrochet" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <div class="carousel-item">
-                            <img src="imagenes/crochet2.jpg" class="d-block w-100" alt="Crochet2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="imagenes/crochet3.jpg" class="d-block w-100" alt="Crochet3">
-                        </div>
+                        <a href="#">Ver más</a>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCrochet" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCrochet" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
-                <a href="">Ver más</a>
             </div>
         </div>
     </section>
+    
     <section class="nutrition-section">
         <div>
             <h3>Nutrición e Hidratación</h3>
@@ -209,7 +217,12 @@
     <div class="icono-whatsapp">
         <a href="#"><img src="./imagenes/whatsapp.png" alt="Whatsapp" width="75px" height="75px"></a>
     </div>
-    
+    <!-- Modal -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+  
     <footer>
         <h2>Contáctanos</h2>
         <a href="#"><img src="./imagenes/correo-electronico.png" alt="e-mail" id="mail" width="50" height="50"></a>
@@ -222,5 +235,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="./modal.js"></script>
+
 </body>
 </html>
