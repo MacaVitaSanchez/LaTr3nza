@@ -91,44 +91,33 @@ padding-left: 15px;
     box-shadow: 5px 5px 5px rgb(143, 164, 154);
 }
 ::placeholder{
-  font-size: 13px;
+  font-size: 15px;
   color: rgba(119, 116, 116, 0.759);
   letter-spacing:.5px;
   position: absolute;
-  top:20px;
+  top: 28px;
   left: 25px;
 }
 
-.radio , .opcion, .novedades{
+.radio , .opcion, .check_novedades{
     color: #4e3303;
-    font-size: 15px;
-   
+    font-size: 18px;
+    background-color: #fefcf9;
+    border-radius: 10px;
+    padding: 2px;
+    text-align: center;
     
 }
-.radio{
-    background-color: rgb(249, 245, 240);
-    padding: 2px;
-}
+
 fieldset{
    display: flex;
    justify-content:center;
    gap: 20px;
-   
+   flex-direction: column; 
 }
 
-.form_input:focus ~ .form_line, 
-.form_input:not(:placeholder-shown) + .form_line {
+.form_input:focus, 
+.form_input:not(:placeholder-shown) {
     transform: scale(1);
     
-}
-.imagen{
-    display: flex;
-    justify-content: end;
-    width: 20vw;
-    height: 40vh;
-    z-index: 2;
-    position: absolute;
-    top:10%;
-    right: 1%;
-    box-sizing: border-box;
 }

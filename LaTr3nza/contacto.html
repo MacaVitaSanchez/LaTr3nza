@@ -53,28 +53,29 @@
     <main></main>
     <div class="formulario">
         <form class="form" action="https://formspree.io/f/mjvnqwjk" method="post" id="contactForm">
-            <h2 class="form_tittle">CONTACTANOS</h2>
+            <h2 class="form_tittle">CONTÁCTANOS</h2>
             <div class="form_container">
                 <div class="form_group">
                     <input type="text" name="name" id="name" class="form_input" placeholder=" ">
                     <label for="name" class="form_label">Nombre:</label>
-                    <span class="form_line"></span>
+                    <!-- <span class="form_line"></span> -->
                 </div>
 
                 <div class="form_group">
                     <input type="email" name="correo" id="correo" class="form_input" placeholder="email@dominio.com">
                     <label for="correo" class="form_label">Correo Electrónico</label>
-                    <span class="form_line"></span>    
+                    <!-- <span class="form_line"></span>     -->
                 </div>
+    
                 <div class="form_group">
                     <input type="text" name="telefono" id="telefono" class="form_input" placeholder="código de área sin 0 y celular sin 15">
                     <label for="telefono" class="form_label">Teléfono</label>
-                    <span class="form_line"></span>
+                    <!-- <span class="form_line"></span> -->
                 </div>
                 
                 <label for="mensaje" class="mensaje">Mensaje</label>
                 <textarea name="mensaje" id="mensaje" cols="50" rows="10" class="input-mensaje" placeholder="Escribe aquí tu consulta..."></textarea> 
-
+                
                 <fieldset>
                     <legend class="form_group form_input">¿Cómo le gustaría que lo contactemos?</legend>
                     <label for="radio-email" class="radio">
@@ -100,7 +101,6 @@
                 <label for="check-novedades" class="check_novedades">
                     <input type="checkbox" name="novedades" id="check-novedades" class="checkbox">¿Le gustaría recibir novedades y promos de LaTr3nza?
                 </label>
-                <br>
                 <p id="error"></p>
                 <input type="submit" class="form_submit" value="Enviar">
             </div>
