@@ -54,9 +54,12 @@
 
 
     </header>
+<main>
 
-    <main class="formulario">
-     <form class="form">
+
+</main>
+    <div class="formulario">
+     <form class="form" action="https://formspree.io/f/mjvnqwjk" method="post">
         <h2 class="form_tittle">CONTACTANOS</h2>
         <div class="form_container">
             <div class="form_group">
@@ -81,37 +84,35 @@
             
             <fieldset>
                 <legend class="form_group , form_input">Cómo le gustaría que lo contactemos?</legend>
-               <label for="radio-email" class="radio"><input type="radio" value="email" name="contacto" id="radio-email">Email</label>
+               <label for="radio-email" class="radio"><input type="radio" value="email" name="opcion-de-contacto" id="radio-email">Email</label>
                 
-                <label for="radio-telefono" class="radio"> <input type="radio" value="telefono" name="contacto" id="radio-telefono">Teléfono</label>
+                <label for="radio-telefono" class="radio"> <input type="radio" value="telefono" name="opcion-de-contacto" id="radio-telefono">Teléfono</label>
                
-                <label for="radio-whatsapp" class="radio"><input type="radio" checked value="whatsapp" name="contacto" id="radio-whatsapp">Whatsapp</label>
+                <label for="radio-whatsapp" class="radio"><input type="radio" checked value="whatsapp" name="opcion-de-contacto" id="radio-whatsapp">Whatsapp</label>
                 
             </fieldset> 
 
             <fieldset>
                 <legend class="form_input">En qué horario prefiere que nos contactemos?</legend>
-                <select class="opcion" name="opcion" id="opcion">
+                <select class="opcion" name="opcion_horario" id="opcion">
                      <option value="mañana" >Mañana</option>
                      <option value="tarde" >Tarde</option>
                      <option value="noche" >Noche</option>
                 </select>
             </fieldset>
            
-            <label for="check-novedades" class="novedades"><input type="checkbox" id="check-novedades" class="checkbox">Le gustaría recibir novedades y promos de LaTrenza?</label>
-            
-            <input type="submit" class="form_submit" value="Enviar">
+            <label for="check-novedades" class="check_novedades"><input type="checkbox" name="novedades" id="check-novedades" class="checkbox">Le gustaría recibir novedades y promos de LaTrenza?</label>
+            <br>
+            <p id="error"> </p>
+            <input type="submit" class="form_submit" value="Enviar" onclick="validarEnviar()">
 
 
         </div>
 
      </form>
-     <div class="imagen">
-        <img class="imagen-form" src="./imagenes/trenzasFdoMarron.jpeg" alt="">
-     </div>
-     
     
-    </main>
+    </div>
+  
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
