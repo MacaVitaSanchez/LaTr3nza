@@ -17,14 +17,18 @@ header, .banner{
 header{
     position: sticky;
     top: 0;
+    z-index: 1000; /* Asegurar que el header tenga un z-index alto */
 }
 
 nav {
+    position: sticky; /* Hacer que el nav se mantenga fijo en la parte superior */
+    top: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #6A4E3D; 
     padding: 10px 0;
+    z-index: 1001; /* Más alto que otros elementos */
 }
 
 nav img {
@@ -35,11 +39,15 @@ nav a {
     color: #FAF3E0; 
     text-decoration: none;
     padding: 10px 15px;
+    z-index: 1000;
+
 }
 
 nav a:hover {
     background-color: #D97D54; 
     border-radius: 5px;
+    z-index: 1000;
+
 }
 .logo {
     border-radius: 180%;
