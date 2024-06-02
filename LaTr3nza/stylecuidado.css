@@ -1,0 +1,28 @@
+.container {
+    margin-top: 10px; /* Ajusta esto si el nav tiene diferente altura */
+    padding: 20px;
+}
+
+.item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.item img {
+    
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+    transform: translateY(20%);
+}
+
+.item h1 {
+    color: #6A4E3D;
+}
+
+.item p {
+    max-width: 800px;
+}
