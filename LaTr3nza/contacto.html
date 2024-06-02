@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleForm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="banner">
+        <h1>LA TR3NZA</h1>
+        <hr>
+        <h3>Peluquería</h3>
+    </div>
+    <header>
+        <nav>
+            <figure class="logo">
+                <img src="./imagenes/logo.jpg" alt="logo de laTrenza">
+            </figure>
+            <!-- <img src="imagenes/logo.jpg" alt="Logo" width="50" height="50"> -->
+            <a href="./index.html">Home</a>
+            <a href="./trenzas.html">Trenzas</a>
+            <a href="./cuidados.html">Cuidados</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+
+
+    </header>
+
+    <main class="formulario">
+     <form class="form">
+        <h2 class="form_tittle">CONTACTANOS</h2>
+        <div class="form_container">
+            <div class="form_group">
+                <input type="text" id="name" class="form_input" required placeholder=" ">
+                <label for="name" class="form_label">Nombre:</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="email" name="correo" id="correo" class="form_input" required placeholder="email@dominio.com">
+                <label for="correo" class="form_label">Correo Electrónico</label>
+                <span class="form_line"></span>    
+            </div>
+            <div class="form_group">
+                <input type="text" name="telefono" id="telefono" class="form_input" required placeholder="código de área sin 0 y celular sin 15">
+                <label for="telefono" class="form_label">Teléfono</label>
+                <span class="form_line"></span>
+            </div>
+            
+                <label for="mensaje" class="mensaje" >Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="50" rows="10" class="input-mensaje" placeholder="Escribe aquí tu consulta..." ></textarea> 
+            
+            <fieldset>
+                <legend class="form_group , form_input">Cómo le gustaría que lo contactemos?</legend>
+               <label for="radio-email" class="radio"><input type="radio" value="email" name="contacto" id="radio-email">Email</label>
+                
+                <label for="radio-telefono" class="radio"> <input type="radio" value="telefono" name="contacto" id="radio-telefono">Teléfono</label>
+               
+                <label for="radio-whatsapp" class="radio"><input type="radio" checked value="whatsapp" name="contacto" id="radio-whatsapp">Whatsapp</label>
+                
+            </fieldset> 
+
+            <fieldset>
+                <legend class="form_input">En qué horario prefiere que nos contactemos?</legend>
+                <select class="opcion" name="opcion" id="opcion">
+                     <option value="mañana" >Mañana</option>
+                     <option value="tarde" >Tarde</option>
+                     <option value="noche" >Noche</option>
+                </select>
+            </fieldset>
+           
+            <label for="check-novedades" class="novedades"><input type="checkbox" id="check-novedades" class="checkbox">Le gustaría recibir novedades y promos de LaTrenza?</label>
+            
+            <input type="submit" class="form_submit" value="Enviar">
+
+
+        </div>
+
+     </form>
+     <div class="imagen">
+        <img class="imagen-form" src="./imagenes/trenzasFdoMarron.jpeg" alt="">
+     </div>
+     
+    
+    </main>
+    
+    
+</body>
+</html>

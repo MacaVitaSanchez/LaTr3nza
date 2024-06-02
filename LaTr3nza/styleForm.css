@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Freeman", sans-serif;
+}
+
+body{
+    background-color: rgba(130, 116, 70, 0.98);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: "banner banner banner banner"
+                         "header header header header" 
+                         " form form form form";
+       
+    height: 100vh;
+}
+
+header, .banner {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #D97D54; 
+    color: white;
+    font-size: 20px;
+}
+
+.banner{
+    grid-area: banner;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    grid-area: header;
+    z-index: 3;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6A4E3D; 
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    text-decoration: none; 
+}
+
+nav img {
+    vertical-align: middle;
+}
+
+nav a {
+    color: #FAF3E0; 
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background-color: #D97D54; 
+    border-radius: 5px;
+}
+
+.logo{
+    width: 90px;
+    margin: 0;
+    
+}
+
+.logo img{
+    width: 100%;
+    border-radius: 180%;
+}
+
+.formulario{
+    grid-area: form;
+    width: 100vw;
+    display: grid;
+    grid-template: repeat(8, 1fr)/repeat(12,1fr);
+    position: relative;
+
+
+}
+
+.form{
+   
+    grid-column: 4/10;
+    grid-row: 1/8;
+    background-color: #e5e5f7;
+    opacity: 0.9;
+    background-image:  linear-gradient(#9d6a1d 1px, transparent 0.75px), linear-gradient(to right, #db9f46 1px, #f7f7fa 1px);
+    background-size: 20px 20px;
+    margin: auto;
+    width: 90%;
+    max-width: 500px;
+    padding: 3em 3em;
+    border-radius: 10px;
+    z-index: 1;
+   
+}
+.form_tittle{
+ font-size: 2.3rem;
+ display: flex;
+ justify-content: center;
+ height: 40%;
+ color: rgb(125, 78, 7);
+ margin-bottom: 60px;
+ border-radius: 15px;
+ background-color: rgb(254, 252, 249); 
+ padding: 15px;
+
+}
+
+
+.form_container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+ 
+
+.form_group{
+    position: relative;
+   
+}
+ 
+.form_input , .mensaje {
+width: 100%;
+background: rgb(239, 211, 160);
+color: #4e3303;
+font-size: 1rem;
+padding: .6em .3em;
+border-radius: 15px;
+outline: none;
+border: none;
+padding-left: 15px;
+
+
+}   
+
+.form_input:not(:placeholder-shown) {
+    color: #4e3303;
+    
+}
+
+.form_input:focus + .form_label, 
+.form_input:not(:placeholder-shown) + .form_label {
+    transform: translateY(-12px) scale(1);
+    background: rgb(239, 211, 160 , 70%);
+    transform-origin: left top;
+    color: #ae4b0e;
+    margin-left: 0px;
+    border-radius: 15px;
+}
+
+.form_label{
+    color: #4e3303;
+    cursor: pointer;
+    position: absolute;
+    left: 5px;
+    top:0px;
+    transform: translateY(5px);
+    transition: transform .5s, color .3s;
+}
+
+.form_submit{
+    background: hsl(22, 98%, 65%);
+    color: #271802;
+    font-size: 16px;
+    letter-spacing:3px;
+    border:none;
+    border-radius: 15px;
+    height: 40px;
+    box-shadow: 5px 5px 5px rgb(143, 164, 154);
+}
+::placeholder{
+  font-size: 13px;
+  color: rgba(119, 116, 116, 0.759);
+  letter-spacing:.5px;
+  position: absolute;
+  top:20px;
+  left: 25px;
+}
+
+.radio , .opcion, .novedades{
+    color: #4e3303;
+    font-size: 15px;
+   
+    
+}
+.radio{
+    background-color: rgb(249, 245, 240);
+    padding: 2px;
+}
+fieldset{
+   display: flex;
+   justify-content:center;
+   gap: 20px;
+   
+}
+
+.form_input:focus ~ .form_line, 
+.form_input:not(:placeholder-shown) + .form_line {
+    transform: scale(1);
+    
+}
+.imagen{
+    display: flex;
+    justify-content: end;
+    /* width: 35vw;
+    height: 40vh; */
+    grid-column: 9/13;
+    grid-row: 2/6;
+    z-index: 2;
+}
+.imagen-form{
+    height: 45vh;
+    object-fit: cover;
+   
+    
+    /* position: relative; */
+    
+    
+    
+}
+
+
+ @media (max-width:425px){
+    .form_tittle{
+        font-size: 1.8rem;
+    }
+ }
